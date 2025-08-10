@@ -1,597 +1,291 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Srushti Patil CV</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="./css/aos.css?ver=1.1.0" rel="stylesheet">
-    <link href="./css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
-    <link href="./css/main.css?ver=1.1.0" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-  </head>
-  <body id="top">
-    <header>
-      <div class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-          <div class="container">
-            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Srushti Patil CV</a>
-              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Work Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="page-content">
-      <div>
-<div class="profile-page">
-  <div class="wrapper">
-    <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/bg3.jpg')"></div>
-      <div class="container">
-        <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/srushti photo.jpg" alt="Image"/></a></div>
-          <div class="h2 title">Srushti Patil</div>
-          
-          <p class="category text-white">Data Science, Machine Learning, Cloud Computing, Web & Backend Development</p> <p> <span style="font: size 9vw"><span class="fa fa-envelope fa-fw"></span> &nbsp;sbpatil2002@gmail.com</span></p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
-        
-        </div>
-      </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Srushti Patil — Data Scientist & Backend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <div class="section">
-        <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/SrushtiPatil1" rel="tooltip" title="Follow me on Github"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/srushtipatil1/" rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a></div>
-        </div>
+  <meta name="description" content="Srushti Patil — Data Scientist & Backend Developer. Resume, projects, skills and contact.">
+
+  <style>
+    :root{
+      --bg: #f8fafc;    /* very light */
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0f172a; /* dark navy */
+      --primary: #0d6efd;
+      --glass: rgba(255,255,255,0.7);
+      --radius: 12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;background:var(--bg);color:var(--accent);}
+    a{color:var(--primary)}
+    .container-xxl{max-width:1100px}
+
+    /* Header / hero */
+    .hero{
+      background: linear-gradient(180deg, rgba(13,110,253,0.06), transparent 60%);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-top:20px;
+      display:flex;gap:24px;align-items:center;box-shadow:0 6px 24px rgba(16,24,40,0.04);
+    }
+    .avatar{flex:0 0 120px;height:120px;border-radius:16px;overflow:hidden;border:4px solid white;box-shadow:0 6px 20px rgba(13,110,253,0.08)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .hero h1{margin:0;font-size:1.5rem;font-weight:700}
+    .hero p.lead{margin:6px 0 0;color:var(--muted)}
+    .hero .cta{margin-top:12px}
+
+    /* card sections */
+    .card-section{background:var(--card);border-radius:12px;padding:22px;margin-top:18px;box-shadow:0 6px 20px rgba(16,24,40,0.03)}
+    .section-title{font-weight:700;margin-bottom:12px}
+
+    /* timeline */
+    .timeline{position:relative;padding-left:20px}
+    .timeline::before{content:'';position:absolute;left:12px;top:0;height:100%;width:2px;background:linear-gradient(#e6eefc,#f0f7ff)}
+    .entry{position:relative;padding:12px 12px 12px 28px;margin-bottom:10px}
+    .entry .dot{position:absolute;left:6px;top:18px;width:14px;height:14px;border-radius:50%;background:var(--primary);box-shadow:0 2px 8px rgba(13,110,253,0.25)}
+
+    /* skills */
+    .skill-pill{display:inline-block;background:#f1f5f9;border-radius:999px;padding:6px 12px;margin:6px 6px 0 0;font-weight:600;color:var(--accent);}
+
+    /* projects grid */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .project-card{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef2ff}
+
+    /* contact */
+    .muted{color:var(--muted)}
+
+    footer{margin:28px 0 60px}
+
+    /* small screens */
+    @media (max-width:640px){
+      .hero{flex-direction:row;align-items:center}
+      .avatar{flex:0 0 96px;height:96px}
+    }
+
+    /* subtle reveal */
+    .reveal{opacity:0;transform:translateY(12px);transition:all .6s cubic-bezier(.2,.9,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+  </style>
+</head>
+<body>
+  <div class="container container-xxl">
+
+    <!-- HERO -->
+    <div class="hero row align-items-center">
+      <div class="col-auto avatar">
+        <!-- replace images/profile.jpg with your photo in /images -->
+        <img src="images/srushti photo.jpg" alt="Srushti Patil">
       </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="about">
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
-            <p>Hi, I'm Srushti Patil, an enthusiastic learner and ambitious individual currently pursuing my B.Tech degree in Information Technology with honors in Data Science from KJSIT, Mumbai.
-              <p>I possess strong foundation in Data Science - Machine Learning, along with proficiency in Web Development, Competitive Coding and Backend Development. 
-              Currently, I am actively involved in Cloud Technology and Data-focused projects.</p>
-            </p><!-- <p>Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience. <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn More</a></p> -->
-          </div>
+      <div class="col">
+        <h1>Srushti Patil <small class="text-muted d-block">Data Scientist • Backend Developer</small></h1>
+        <p class="lead muted">B.Tech (IT, Honors in Data Science) — experience in ML, data engineering, and backend APIs. Building predictive systems and data pipelines that scale.</p>
+        <div class="cta">
+          <a class="btn btn-primary btn-sm mr-2" href="Resume Srushti Patil.pdf" download>Download CV</a>
+          <a class="btn btn-outline-primary btn-sm" href="#contact">Hire / Contact</a>
         </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
-            <div class="row">
-              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">21</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">sbpatil2002@gmail.com</div>
-            </div>
-            <!-- <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Phone</strong></div>
-              <div class="col-sm-8">878668</div>
-            </div> -->
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-              <div class="col-sm-8">Navi Mumbai</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-              <div class="col-sm-8">English, Hindi, Marathi</div>
-            </div>
-          </div>
+        <div class="mt-3">
+          <a href="https://github.com/SrushtiPatil1" class="text-muted mr-3" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/srushtipatil1/" class="text-muted mr-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a class="text-muted" href="mailto:sbpatil2002@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="section" id="skill">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">Professional Skills</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Machine Learning</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">HTML/CSS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Data analysis</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Cloud</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Python</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Critical Thinker</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">C/C++</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Communication</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">DBMS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Teamwork</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<!-- <div class="section" id="portfolio">
-  <div class="container">
+    <!-- ABOUT + KEY STATS -->
     <div class="row">
-      <div class="col-md-6 ml-auto mr-auto">
-        <div class="h4 text-center mb-4 title">Portfolio</div>
-        <div class="nav-align-center">
-          <ul class="nav nav-pills nav-pills-primary" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+      <div class="col-md-8">
+        <div class="card-section reveal">
+          <div class="section-title">About</div>
+          <p>Data Scientist and Backend Developer with 1+ years of professional experience and multiple internships across backend development, data engineering and applied ML. I build scalable APIs, predictive models, and dashboards that help teams make faster, data-informed decisions.</p>
+
+          <div class="row mt-3">
+            <div class="col-sm-4"><strong>Location</strong><div class="muted">Navi Mumbai, India</div></div>
+            <div class="col-sm-4"><strong>Email</strong><div class="muted">sbpatil2002@gmail.com</div></div>
+            <div class="col-sm-4"><strong>Phone</strong><div class="muted">+91 93260 83141</div></div>
+          </div>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="card-section reveal">
+          <div class="section-title">Experience</div>
+          <div class="timeline">
+
+            <div class="entry">
+              <div class="dot"></div>
+              <div class="d-flex justify-content-between"><strong>Tata Consultancy Services</strong><span class="muted">Nov 2024 – Present</span></div>
+              <div class="muted">System Engineer</div>
+              <p class="mb-0">Built backend microservices with Spring Boot. Implemented APIs, business logic and unit tests (JUnit). Delivered secure, scalable services in a large enterprise application.</p>
+            </div>
+
+            <div class="entry">
+              <div class="dot"></div>
+              <div class="d-flex justify-content-between"><strong>Piramal Pharma Limited</strong><span class="muted">Jul 2024 – Nov 2024</span></div>
+              <div class="muted">Graduate Engineer Trainee (Data Engineer)</div>
+              <p class="mb-0">Led migration of dashboards and data workflows to cloud. Optimized Glue jobs, created Snowflake marts and built Qlik dashboards.</p>
+            </div>
+
+            <div class="entry">
+              <div class="dot"></div>
+              <div class="d-flex justify-content-between"><strong>TATA Power</strong><span class="muted">Jun 2023 – May 2024</span></div>
+              <div class="muted">Research Intern</div>
+              <p class="mb-0">Built a load forecasting product (LSTM/ANN/DNN) and dashboards. Achieved high accuracy and reduced manual effort through automation and back-end tooling (FastAPI, MongoDB).</p>
+            </div>
+
+            <div class="entry">
+              <div class="dot"></div>
+              <div class="d-flex justify-content-between"><strong>India Meteorological Department (IMD)</strong><span class="muted">Jul 2022 – May 2023</span></div>
+              <div class="muted">Data Science Intern</div>
+              <p class="mb-0">Developed a Heatwave Watch System with ML models (LSTM, CNN, DNN) and visualizations. Built scrapers and backend APIs to expose predictions.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="card-section reveal">
+          <div class="section-title">Education</div>
+          <div class="mb-2"><strong>B.Tech — Information Technology (Honors in Data Science)</strong><div class="muted">K. J. Somaiya Institute of Technology — 2020–2024 — CGPA: 9.67</div></div>
+          <div><strong>High School</strong><div class="muted">Ryan International School — 2018–2020</div></div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <!-- Skills -->
+        <div class="card-section reveal">
+          <div class="section-title">Skills</div>
+          <div>
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">Machine Learning</div>
+            <div class="skill-pill">Deep Learning (LSTM/CNN)</div>
+            <div class="skill-pill">FastAPI / Flask</div>
+            <div class="skill-pill">Spring Boot</div>
+            <div class="skill-pill">AWS (Glue, S3)</div>
+            <div class="skill-pill">Snowflake</div>
+            <div class="skill-pill">Power BI / Qlik / Tableau</div>
+            <div class="skill-pill">SQL / MongoDB</div>
+            <div class="skill-pill">HTML / CSS / JS</div>
+            <div class="skill-pill">Teamwork & Communication</div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="card-section reveal">
+          <div class="section-title">Highlighted Projects</div>
+          <div class="projects">
+            <div class="project-card">
+              <strong>AI-Based Phishing Detection</strong>
+              <div class="muted small">Chrome extension — Random Forest, feature importance</div>
+              <div class="mt-2"><a href="https://github.com/SrushtiPatil1/AI-Based-Phishing-Site-Detection-Chrome-Extension" target="_blank">GitHub →</a></div>
+            </div>
+            <div class="project-card">
+              <strong>Automated Temperature Control</strong>
+              <div class="muted small">IOT + Firebase + Arduino</div>
+              <div class="mt-2"><a href="https://github.com/SrushtiPatil1/Automated-Temperature-Control-Monitoring-System" target="_blank">GitHub →</a></div>
+            </div>
+            <div class="project-card">
+              <strong>Personalized Web Browsing Assistant</strong>
+              <div class="muted small">Browser-history recommender — collaborative filtering</div>
+              <div class="mt-2"><a href="https://github.com/SrushtiPatil1/Personalized-Web-Browsing-Assistant-" target="_blank">GitHub →</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="card-section reveal">
+          <div class="section-title">Certificates</div>
+          <ul class="muted small mb-0">
+            <li>Programming Foundations (Duke) — JavaScript/HTML/CSS</li>
+            <li>Google Data Analytics</li>
+            <li>AWS Academy Cloud Foundations + Architecting</li>
+            <li>Data Visualization with Power BI</li>
+            <li>Snowflake badges</li>
           </ul>
         </div>
+
       </div>
     </div>
-    <div class="tab-content gallery mt-5">
-      <div class="tab-pane active" id="web-development">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Recent Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Startup Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Food Order Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Web Advertising Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="graphic-design" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Triangle Pattern</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Abstract Umbrella</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Cube Surface Texture</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Abstract Line</div>
-                      <p>Graphic Design</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="Photography" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Wedding Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Beach Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Nature Photoshoot</div>
-                      <p>Photography</p>
-                    </figcaption>
-                  </figure></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 
-
-
-
-<div class="section" id="experience">
-  <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
-    <div class="card">
+    <!-- CONTACT -->
+    <div id="contact" class="card-section reveal">
+      <div class="section-title">Contact</div>
       <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>June 2023 - Present</p>
-            <div class="h5">TATA Power</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Intern</div>
-            <p>Building a load forecast system to predict electric load, facilitating efficient planning for companies. Developing machine learning models(LSTM, ANN, DNN) for load prediction using weather and load data. Working on backend development and user authentication.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>July 2022 - February 2023</p>
-            <div class="h5">India Meteorological Department</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Data Science Intern</div>
-            <p> Developed Heatwave Watch System which aids in early prediction of heatwaves for forecasters. Created visualizations for temperature data and developed machine learning models (LSTM, CNN, DNN) for heatwave prediction. Build a scraper to gather real time data. Optimized data preprocessing techniques and worked on backend development. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>June 2022 - July 2022</p>
-            <div class="h5">KJSIT</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Power BI Intern</div>
-            <p>Build sales dashboard using Power BI.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="education">
-  <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Education</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2020 - 2024</p>
-            <div class="h5">Bachelor's Degree</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Bachelor of Information Technology</div>
-            <p class="category">K. J. Somaiya Institute of Technology</p>
-            <p>Bachelor of Technology, BTech. in Information Technology with Honors in Data Science.<br>Cultural Activities: Jt. Technical Head at Institution of Engineering and Technology(IET) Committee.<br> Member at KJSIT Infinite Loop club.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2018 - 2020</p>
-            <div class="h5">High School</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Science Stream</div>
-            <p class="category">Ryan International School, CBSE</p>
-            <p>Science stream PCM, CBSE</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2005 - 2018</p>
-            <div class="h5">School</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Preparatory Education</div>
-            <p class="category">St. Joseph's High School, CBSE</p>
-            <p>Activities and Societies: Deputy Minister in the Students Council.<br>School Representative at Ryan Teen Camp 2017 Pagents Round.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="col-md-6">
+          <p class="muted">Want to discuss a role, internship or project? Send a quick message or download my CV and email me directly.</p>
 
-
-
-<!-- <div class="section" id="reference">
-  <div class="container cc-reference">
-    <div class="h4 mb-4 text-center title">References</div>
-    <div class="card" data-aos="zoom-in">
-      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-          <li data-target="#cc-Indicators" data-slide-to="1"></li>
-          <li data-target="#cc-Indicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg" alt="Image"/>
-                <div class="h5 pt-2">Aiyana</div>
-                <p class="category">CEO / WEBM</p>
+          <!-- FORM: Replace action with your Formspree URL if you want form submissions emailed -->
+          <form id="contactForm" action="" onsubmit="return onContactSubmit(event)">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="small">Name</label>
+                <input class="form-control" name="name" required>
               </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              <div class="form-group col-md-6">
+                <label class="small">Email</label>
+                <input type="email" class="form-control" name="email" required>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg" alt="Image"/>
-                <div class="h5 pt-2">Braiden</div>
-                <p class="category">CEO / Creativem</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
+            <div class="form-group">
+              <label class="small">Message</label>
+              <textarea class="form-control" name="message" rows="4" required></textarea>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg" alt="Image"/>
-                <div class="h5 pt-2">Alexander</div>
-                <p class="category">CEO / Webnote</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
+            <div class="d-flex align-items-center">
+              <button class="btn btn-primary btn-sm mr-3" type="submit">Send message</button>
+              <small id="formStatus" class="muted">Or email me at <a href="mailto:sbpatil2002@gmail.com">sbpatil2002@gmail.com</a></small>
             </div>
+          </form>
+
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div><strong>Location</strong><div class="muted">Navi Mumbai, India</div></div>
+            <div class="mt-2"><strong>Email</strong><div class="muted">sbpatil2002@gmail.com</div></div>
+            <div class="mt-2"><strong>LinkedIn</strong><div class="muted"><a href="https://www.linkedin.com/in/srushtipatil1/" target="_blank">/in/srushtipatil1</a></div></div>
+            <div class="mt-2"><strong>GitHub</strong><div class="muted"><a href="https://github.com/SrushtiPatil1" target="_blank">github.com/SrushtiPatil1</a></div></div>
+            <div class="mt-3 small muted">Tip: to receive messages directly to your email keep the form action blank and set up a Formspree endpoint — then paste it into the form <code>action</code> attribute.</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
-    <div class="container">
-      <div class="cc-contact">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="card mb-0" data-aos="zoom-in">
-              <div class="h4 text-center title">Contact Me</div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <form action="https://formspree.io/your@email.com" method="POST">
-                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <p class="mb-0"><strong>Address </strong></p>
-                    <p class="pb-2">140, City Center, New York, U.S.A</p>
-                    <p class="mb-0"><strong>Phone</strong></p>
-                    <p class="pb-2">+1718-111-0011</p>
-                    <p class="mb-0"><strong>Email</strong></p>
-                    <p>anthony@company.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div></div>
-    </div> -->
 
-
-
-    <div class="h4 text-center mb-4 title">Thank You!</div>
-    <footer class="footer">
-      <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://github.com/SrushtiPatil1"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="https://www.linkedin.com/in/srushtipatil1/"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></div>
-      <div class="h4 title text-center">Srushti Patil</div>
-      <div class="text-center text-muted">
-        <p>&copy; Srushti Patil CV. All rights reserved by <a class="credit" href="https://github.com/SrushtiPatil1" target="_blank">SrushtiPatil1</a></p>
-      </div>
+    <footer class="text-center muted">
+      <div class="mt-4">© 2025 Srushti Patil — <a href="Resume Srushti Patil.pdf" download>Download CV</a></div>
     </footer>
-    <script src="./js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
-    <script src="./js/core/popper.min.js?ver=1.1.0"></script>
-    <script src="./js/core/bootstrap.min.js?ver=1.1.0"></script>
-    <script src="./js/now-ui-kit.js?ver=1.1.0"></script>
-    <script src="./js/aos.js?ver=1.1.0"></script>
-    <script src="./scripts/main.js?ver=1.1.0"></script>
-  </body>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // small JS: reveal on scroll + form handling
+    function revealAll(){document.querySelectorAll('.reveal').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<window.innerHeight-80)el.classList.add('visible');})}
+    window.addEventListener('scroll',revealAll);window.addEventListener('load',()=>{revealAll();});
+
+    function onContactSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      // If user hasn't set a server endpoint, show the mailto fallback
+      const action = form.getAttribute('action') || '';
+      if(!action){
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+        const subject = encodeURIComponent('Website contact from ' + (name||'A visitor'));
+        const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+message);
+        const mailto = 'mailto:sbpatil2002@gmail.com?subject='+subject+'&body='+body;
+        window.location.href = mailto;
+        return false;
+      }
+      // If action exists (user configured Formspree or other endpoint) perform a fetch POST
+      fetch(action,{method:'POST',body:new FormData(form)}).then(res=>{if(res.ok){document.getElementById('formStatus').innerText='Message sent — thank you!';form.reset()}else{document.getElementById('formStatus').innerText='Sending failed — try email.'}}).catch(()=>{document.getElementById('formStatus').innerText='Sending failed — try email.'});
+      return false;
+    }
+  </script>
+</body>
 </html>
