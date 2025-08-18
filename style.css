@@ -366,3 +366,9 @@ footer {
 
 
 
+.timeline-item i {
+  font-size: 0.85em; /* smaller than normal text */
+  color: #666;       /* optional: make it slightly lighter */
+}
+
+
