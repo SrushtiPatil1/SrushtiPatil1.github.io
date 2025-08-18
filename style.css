@@ -18,10 +18,24 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
-  gap: 40px;   /* evenly spaced gap between links */
+  justify-content: space-between; /* pushes links left, icons right */
+  align-items: center;
   padding: 15px 20px;
 }
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* space between About, Experience, etc */
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
 
 nav a {
   text-decoration: none;
@@ -38,12 +52,7 @@ nav a:hover {
 }
 
 
-.nav-icons {
-  display: flex;
-  gap: 10px;
-  margin-left: 600px;
-  
-}
+
 
 .nav-icons a {
   color: #ffffff;
@@ -55,6 +64,23 @@ nav a:hover {
   color: #ffcc70;
   transform: scale(1.2);
 }
+
+.hire {
+  background: #ffcc70;
+  color: #3f5efb;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hire:hover {
+  background: #ffffff;
+  color: #fc466b;
+  transform: scale(1.1);
+}
+
 
 
 /* HERO */
@@ -370,5 +396,7 @@ footer {
   font-size: 0.85em; /* smaller than normal text */
   color: #666;       /* optional: make it slightly lighter */
 }
+
+
 
 
